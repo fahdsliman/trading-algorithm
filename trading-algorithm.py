@@ -120,4 +120,4 @@ if __name__ == "__main__":
 
         trader.data['Portfolio_Value'].plot(figsize=(12, 6))
         plt.title(f'{symbol} Portfolio Value')
-        plt.show() 
+        plt.show()
