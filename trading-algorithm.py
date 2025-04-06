@@ -62,7 +62,7 @@ class TradingAlgorithm:
         initial_capital = 10000.0
         self.data['Portfolio_Value'] = initial_capital * (1 + self.data['Strategy_Returns']).cumprod()
 
-        # Calculate performance metrics
+        # Calculate performance metrics 
         total_return = (self.data['Portfolio_Value'][-1] / initial_capital - 1) * 100
         sharpe_ratio = np.sqrt(252) * (self.data['Strategy_Returns'].mean() /
                                        self.data['Strategy_Returns'].std())
