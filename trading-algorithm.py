@@ -12,7 +12,7 @@ class TradingAlgorithm:
         self.short_window = short_window  # Short-term moving average period
         self.long_window = long_window  # Long-term moving average period
         self.data = None
-        self.signals = None 
+        self.signals = None
 
     def get_data(self):
         """Fetch historical data from Yahoo Finance"""
